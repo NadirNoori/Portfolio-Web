@@ -1,9 +1,8 @@
 <?php
+// logout.php
 session_start();
-// Clear all session variables
-$_SESSION = array();
-// Destroy the actual session
-session_destroy();
-// Send back to the login page
+session_unset();   // Remove all session variables
+session_destroy(); // Destroy the session
 header("Location: index.php");
 exit();
+?>
