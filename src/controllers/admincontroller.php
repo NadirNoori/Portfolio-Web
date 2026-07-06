@@ -1,3 +1,4 @@
+
 <?php
 require_once __DIR__ . '/../../Config/DBConnection.php';
 require_once __DIR__ . '/../Models/adminmodel.php';
@@ -18,6 +19,8 @@ class LoginController {
         if ($user && $isValidPassword) {
             $_SESSION['loggedin'] = true;
             $_SESSION['admin_email'] = $user['email'];
+            $_SESSION['loggedin'] = true; // Make sure this key is exactly 'loggedin'
+
             return true;
         }
 

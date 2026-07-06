@@ -1,3 +1,15 @@
+
+<?php
+// dashboard.php
+session_start();
+
+// Check if the user is logged in
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+    header("Location: admin.html");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,20 +30,22 @@
             </div>
 
             <nav class="space-y-2 flex-grow">
-                <a href="#" class="flex items-center gap-3 px-4 py-3 bg-teal-50 text-teal-700 rounded-xl font-semibold transition-all">
+                <a href="adminDashboard.php" class="flex items-center gap-3 px-4 py-3 bg-teal-50 text-teal-700 rounded-xl font-semibold transition-all">
                     <i class="fa-solid fa-chart-line"></i> Dashboard
                 </a>
                 <a href="#" class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-slate-50 hover:text-slate-900 rounded-xl transition-all">
                     <i class="fa-solid fa-folder-open"></i> Projects
                 </a>
-                <a href="#" class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-slate-50 hover:text-slate-900 rounded-xl transition-all">
+                <a href="message.php" class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-slate-50 hover:text-slate-900 rounded-xl transition-all">
                     <i class="fa-solid fa-comments"></i> Messages
                 </a>
             </nav>
 
             <button class="flex items-center gap-3 px-4 py-3 text-red-500 hover:bg-red-50 rounded-xl transition-all">
-                <i class="fa-solid fa-right-from-bracket"></i>   <a href="logout.php" class="btn btn-outline-danger btn-sm">Logout</a>
+                <i class="fa-solid fa-right-from-bracket"></i>   
+                 <a href="logout.php" class="btn btn-outline-danger btn-sm">Logout</a>
             </button>
+           
         </aside>
 
         <div class="flex-1 p-10">

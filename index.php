@@ -278,21 +278,25 @@
             </div>
 
             <form class="md:col-span-7 space-y-4" action="#" method="POST">
-                <div class="grid grid-cols-2 gap-4">
+                    <div class="grid grid-cols-2 gap-4">
                     <div>
                         <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">Name</label>
-                        <input type="text" required class="w-full bg-white/80 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-teal-500 text-slate-800 focus:bg-white transition-all">
+                        <input  id="name" name="name" type="text" required class="w-full bg-white/80 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-teal-500 text-slate-800 focus:bg-white transition-all">
                     </div>
                     <div>
                         <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">Email</label>
-                        <input type="email" required class="w-full bg-white/80 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-teal-500 text-slate-800 focus:bg-white transition-all">
+                        <input id="email" name="email" type="email" required class="w-full bg-white/80 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-teal-500 text-slate-800 focus:bg-white transition-all">
                     </div>
                 </div>
                 <div>
                     <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">Message</label>
-                    <textarea rows="4" required class="w-full bg-white/80 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-teal-500 text-slate-800 focus:bg-white transition-all"></textarea>
+                    <textarea  id="message" name="message" rows="4" required class="w-full bg-white/80 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-teal-500 text-slate-800 focus:bg-white transition-all"></textarea>
                 </div>
-                <button type="submit" class="w-full py-3 rounded-xl bg-slate-900 hover:bg-teal-600 text-white font-semibold transition-all text-sm shadow-sm">Send Message</button>
+                <button id="send-message" type="submit" class="w-full py-3 rounded-xl bg-slate-900 hover:bg-teal-600 text-white font-semibold transition-all text-sm shadow-sm">Send Message
+        
+                </button>
+
+
             </form>
         </div>
     </section>
