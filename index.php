@@ -266,54 +266,91 @@
                     <div class="text-sm font-medium text-slate-800">nadirnoori420@gmail.com</div>
                 </a>
                 
-               <div class="p-4 rounded-xl bg-white/80 border border-slate-100 shadow-sm">
+               <div class="p-4 rounded-xl bg-white/80 border border-slate-10 shadow-sm ">
+    <div class="text-center">
     <div class="text-xs text-slate-400 mb-3">Follow & Connect on Social Media</div>
-    <div class="flex flex-wrap gap-3">
+    
+    <div class="flex flex-wrap gap-3 justify-center">
         <!-- GitHub -->
-        <a href="https://github.com/Noori2008" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg bg-white border border-slate-200 text-slate-600 flex items-center justify-center hover:bg-[#24292e] hover:text-white hover:border-[#24292e] transition-all" title="GitHub">
+        <a href="https://github.com/NadirNoori" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg bg-white border border-slate-200 text-slate-600 flex items-center justify-center hover:bg-[#24292e] hover:text-white hover:border-[#24292e] transition-all" title="GitHub">
             <i class="fa-brands fa-github text-lg"></i>
         </a>
-        <!-- LinkedIn -->
-        <a href="https://linkedin.com/in/nxdir-noori" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg bg-white border border-slate-200 text-slate-600 flex items-center justify-center hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-all" title="LinkedIn">
-            <i class="fa-brands fa-linkedin-in text-lg"></i>
-        </a>
+        
         <!-- Discord -->
         <a href="https://discord.com/users/nadir_noori" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg bg-white border border-slate-200 text-slate-600 flex items-center justify-center hover:bg-[#5865F2] hover:text-white hover:border-[#5865F2] transition-all" title="Discord">
             <i class="fa-brands fa-discord text-lg"></i>
         </a>
+        
         <!-- Facebook -->
         <a href="https://www.facebook.com/share/1DErjeUokQ/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg bg-white border border-slate-200 text-slate-600 flex items-center justify-center hover:bg-[#1877f2] hover:text-white hover:border-[#1877f2] transition-all" title="Facebook">
             <i class="fa-brands fa-facebook-f text-lg"></i>
         </a>
+        
         <!-- Instagram -->
         <a href="https://www.instagram.com/nxdir.noori" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg bg-white border border-slate-200 text-slate-600 flex items-center justify-center hover:bg-gradient-to-tr hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7] hover:text-white hover:border-transparent transition-all" title="Instagram">
             <i class="fa-brands fa-instagram text-lg"></i>
         </a>
     </div>
 </div>
+</div>
             </div>
+<form id="contactForm" class="md:col-span-7 space-y-4">
+    <div class="grid grid-cols-2 gap-4">
+        <div>
+            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">Name</label>
+            <input id="name" name="name" type="text" required class="w-full bg-white/80 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-teal-500 text-slate-800 focus:bg-white transition-all">
+        </div>
+        <div>
+            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">Email</label>
+            <input id="email" name="email" type="email" required class="w-full bg-white/80 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-teal-500 text-slate-800 focus:bg-white transition-all">
+        </div>
+    </div>
+    <div>
+        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">Message</label>
+        <textarea id="message" name="message" rows="4" required class="w-full bg-white/80 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-teal-500 text-slate-800 focus:bg-white transition-all"></textarea>
+    </div>
+    <button id="send-message" type="submit" class="w-full py-3 rounded-xl bg-slate-900 hover:bg-teal-600 text-white font-semibold transition-all text-sm shadow-sm">
+        Send Message
+    </button>
+</form>
 
-            <form class="md:col-span-7 space-y-4" action="#" method="POST">
-                    <div class="grid grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">Name</label>
-                        <input  id="name" name="name" type="text" required class="w-full bg-white/80 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-teal-500 text-slate-800 focus:bg-white transition-all">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">Email</label>
-                        <input id="email" name="email" type="email" required class="w-full bg-white/80 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-teal-500 text-slate-800 focus:bg-white transition-all">
-                    </div>
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">Message</label>
-                    <textarea  id="message" name="message" rows="4" required class="w-full bg-white/80 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-teal-500 text-slate-800 focus:bg-white transition-all"></textarea>
-                </div>
-                <button id="send-message" type="submit" class="w-full py-3 rounded-xl bg-slate-900 hover:bg-teal-600 text-white font-semibold transition-all text-sm shadow-sm">Send Message
+<script>
+    document.getElementById('contactForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
         
-                </button>
+        const button = document.getElementById('send-message');
+        button.innerText = 'Sending...';
+        button.disabled = true;
 
+        const payload = {
+            embeds: [{
+                title: 'New Portfolio Message! 📬',
+                color: 1373663, // Teal color
+                fields: [
+                    { name: 'Name', value: document.getElementById('name').value, inline: true },
+                    { name: 'Email', value: document.getElementById('email').value, inline: true },
+                    { name: 'Message', value: document.getElementById('message').value }
+                ],
+                timestamp: new Date()
+            }]
+        };
 
-            </form>
+        try {
+            await fetch('https://discord.com/api/webhooks/1526178759848366101/ukMOErl87woUUv9Dr9ey6gcTAFJVxQP4Q5oZGVceofC8_ErgQ8dBtCjKgEaOxFGfGrFJ', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+            alert('Message sent successfully!');
+            document.getElementById('contactForm').reset();
+        } catch (error) {
+            alert('Failed to send. Please try again later.');
+        } finally {
+            button.innerText = 'Send Message';
+            button.disabled = false;
+        }
+    });
+</script>
         </div>
     </section>
 
