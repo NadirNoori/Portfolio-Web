@@ -117,41 +117,68 @@
         </div>
     </section>
 
-    <section id="skills" class="py-24 px-6 max-w-6xl mx-auto">
-        <div class="text-center max-w-2xl mx-auto mb-16">
-            <div class="inline-flex items-center gap-2 text-teal-600 text-sm font-semibold uppercase tracking-wider mb-3">
-                Expertise
+<section id="skills" class="py-24 px-6 max-w-5xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+    <!-- Using font-sans ensures the browser uses the default system font -->
+    <h2 class="text-4xl font-bold text-slate-900 mb-4 font-sans tracking-tight">Technical Expertise</h2>
+    <div class="w-20 h-1.5 bg-gradient-to-r from-teal-500 to-cyan-500 mx-auto rounded-full"></div>
+</div>
+    
+    <!-- Skills Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Skill Card Template -->
+        <div class="group p-8 rounded-3xl bg-white border border-slate-100 shadow-sm hover:shadow-xl hover:shadow-teal-500/10 transition-all duration-300">
+            <div class="w-12 h-12 rounded-2xl bg-teal-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-code text-teal-600 text-xl"></i>
             </div>
-            <h2 class="text-3xl font-bold text-slate-900">Technical Skills</h2>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Development</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">JavaScript, Java, PHP</p>
+        </div>
+
+        <div class="group p-8 rounded-3xl bg-white border border-slate-100 shadow-sm hover:shadow-xl hover:shadow-teal-500/10 transition-all duration-300">
+            <div class="w-12 h-12 rounded-2xl bg-cyan-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-globe text-cyan-600 text-xl"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Web Design</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">HTML5, CSS3, React, Bootstrap</p>
+        </div>
+
+        <div class="group p-8 rounded-3xl bg-white border border-slate-100 shadow-sm hover:shadow-xl hover:shadow-teal-500/10 transition-all duration-300">
+            <div class="w-12 h-12 rounded-2xl bg-teal-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-database text-teal-600 text-xl"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Database</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">MySQL, SQLite, PostgreSQL</p>
+        </div>
+
+        <div class="group p-8 rounded-3xl bg-white border border-slate-100 shadow-sm hover:shadow-xl hover:shadow-teal-500/10 transition-all duration-300">
+            <div class="w-12 h-12 rounded-2xl bg-cyan-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-mobile-screen text-cyan-600 text-xl"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Mobile</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">Android Studio, Java</p>
+        </div>
+
+        <div class="group p-8 rounded-3xl bg-white border border-slate-100 shadow-sm hover:shadow-xl hover:shadow-teal-500/10 transition-all duration-300">
+            <div class="w-12 h-12 rounded-2xl bg-teal-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-screwdriver-wrench text-teal-600 text-xl"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Tools</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">Git, GitHub, VS Code</p>
+        </div>
+
+        <div class="group p-8 rounded-3xl bg-white border border-slate-100 shadow-sm hover:shadow-xl hover:shadow-teal-500/10 transition-all duration-300">
+            <div class="w-12 h-12 rounded-2xl bg-cyan-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-briefcase text-cyan-600 text-xl"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Productivity</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">Microsoft Office Suite</p>
         </div>
         
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            <div class="p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-slate-100 flex flex-col items-center justify-center text-center group hover:bg-white hover:border-teal-500 hover:shadow-md transition-all duration-300">
-                <div class="w-14 h-14 rounded-full bg-white border border-slate-100 flex items-center justify-center text-sky-500 text-2xl shadow-sm mb-4 group-hover:scale-110 transition-transform">
-                    <i class="fa-brands fa-react animate-[spin_20s_linear_infinite]"></i>
-                </div>
-                <span class="font-semibold text-slate-800 text-sm">React</span>
-            </div>
-            <div class="p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-slate-100 flex flex-col items-center justify-center text-center group hover:bg-white hover:border-teal-500 hover:shadow-md transition-all duration-300">
-                <div class="w-14 h-14 rounded-full bg-white border border-slate-100 flex items-center justify-center text-amber-500 text-2xl shadow-sm mb-4 group-hover:scale-110 transition-transform">
-                    <i class="fa-brands fa-js"></i>
-                </div>
-                <span class="font-semibold text-slate-800 text-sm">JavaScript</span>
-            </div>
-            <div class="p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-slate-100 flex flex-col items-center justify-center text-center group hover:bg-white hover:border-teal-500 hover:shadow-md transition-all duration-300">
-                <div class="w-14 h-14 rounded-full bg-white border border-slate-100 flex items-center justify-center text-orange-600 text-2xl shadow-sm mb-4 group-hover:scale-110 transition-transform">
-                    <i class="fa-brands fa-git-alt"></i>
-                </div>
-                <span class="font-semibold text-slate-800 text-sm">Git & GitHub</span>
-            </div>
-            <div class="p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-slate-100 flex flex-col items-center justify-center text-center group hover:bg-white hover:border-teal-500 hover:shadow-md transition-all duration-300">
-                <div class="w-14 h-14 rounded-full bg-white border border-slate-100 flex items-center justify-center text-blue-600 text-2xl shadow-sm mb-4 group-hover:scale-110 transition-transform">
-                    <i class="fa-solid fa-database"></i>
-                </div>
-                <span class="font-semibold text-slate-800 text-sm">PostgreSQL / MySQL</span>
-            </div>
-        </div>
-    </section>
+    </div>
+</section>
 
     <section id="services" class="py-24 px-6 max-w-6xl mx-auto border-t border-slate-100/60">
         <div class="text-center max-w-2xl mx-auto mb-16">
@@ -185,54 +212,43 @@
         </div>
     </section>
 
-    <section id="projects" class="py-24 px-6 max-w-6xl mx-auto border-t border-slate-100/60">
-        <div class="text-center max-w-2xl mx-auto mb-16">
-            <div class="inline-flex items-center gap-2 text-teal-600 text-sm font-semibold uppercase tracking-wider mb-3">
-                Portfolio
-            </div>
-            <h2 class="text-3xl font-bold text-slate-900">Featured Projects</h2>
+<section id="projects" class="py-24 px-6 max-w-6xl mx-auto border-t border-slate-100/60">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 text-teal-600 text-sm font-semibold uppercase tracking-wider mb-3">
+            Portfolio
         </div>
+        <h2 class="text-3xl font-bold text-slate-900">Featured Projects</h2>
+    </div>
 
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="group rounded-2xl overflow-hidden bg-white/80 backdrop-blur-sm border border-slate-200 hover:shadow-md transition-all">
-                <div class="h-52 bg-slate-50/50 flex items-center justify-center relative overflow-hidden border-b border-slate-100">
-                    <i class="fa-solid fa-cubes text-5xl text-slate-400 group-hover:scale-110 transition-transform duration-300"></i>
-                </div>
-                <div class="p-6">
-                    <div class="flex gap-2 mb-3">
-                        <span class="text-xs px-2 py-1 rounded bg-slate-100 text-teal-700 font-medium">JavaScript</span>
-                        <span class="text-xs px-2 py-1 rounded bg-slate-100 text-teal-700 font-medium">React</span>
-                        <span class="text-xs px-2 py-1 rounded bg-slate-100 text-teal-700 font-medium">PostgreSQL</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2 text-slate-900">E-Commerce Application Platform</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-4">A complete online marketplace system featuring real-time inventory checks, user authentication, and secure payment integrations.</p>
-                    <div class="flex gap-4 text-sm font-medium">
-                        <a href="#" class="text-teal-600 hover:underline flex items-center gap-1">Live Demo <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
-                        <a href="#" class="text-slate-500 hover:text-slate-800 flex items-center gap-1">Source Code <i class="fa-brands fa-github text-xs"></i></a>
-                    </div>
-                </div>
+    <div class="flex justify-center">
+        <div class="group w-full max-w-md rounded-2xl overflow-hidden bg-white/80 backdrop-blur-sm border border-slate-200 hover:shadow-md transition-all">
+            <div class="h-52 bg-slate-50 relative overflow-hidden border-b border-slate-100">
+                <img src="public/images/library.webp" alt="Mini-Library Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
             </div>
-
-            <div class="group rounded-2xl overflow-hidden bg-white/80 backdrop-blur-sm border border-slate-200 hover:shadow-md transition-all">
-                <div class="h-52 bg-slate-50/50 flex items-center justify-center relative overflow-hidden border-b border-slate-100">
-                    <i class="fa-solid fa-chart-line text-5xl text-slate-400 group-hover:scale-110 transition-transform duration-300"></i>
+            
+            <div class="p-6">
+                <div class="flex flex-wrap gap-2 mb-3">
+                    <span class="text-xs px-2 py-1 rounded bg-slate-100 text-teal-700 font-medium">Java</span>
+                    <span class="text-xs px-2 py-1 rounded bg-slate-100 text-teal-700 font-medium">MDX</span>
+                    <span class="text-xs px-2 py-1 rounded bg-slate-100 text-teal-700 font-medium">Astro</span>
+                    <span class="text-xs px-2 py-1 rounded bg-slate-100 text-teal-700 font-medium">CSS</span>
+                    <span class="text-xs px-2 py-1 rounded bg-slate-100 text-teal-700 font-medium">JavaScript</span>
+                    <span class="text-xs px-2 py-1 rounded bg-slate-100 text-teal-700 font-medium">HTML</span>
+                    <span class="text-xs px-2 py-1 rounded bg-slate-100 text-teal-700 font-medium">PHP</span>
                 </div>
-                <div class="p-6">
-                    <div class="flex gap-2 mb-3">
-                        <span class="text-xs px-2 py-1 rounded bg-slate-100 text-cyan-700 font-medium">JavaScript</span>
-                        <span class="text-xs px-2 py-1 rounded bg-slate-100 text-cyan-700 font-medium">React</span>
-                        <span class="text-xs px-2 py-1 rounded bg-slate-100 text-cyan-700 font-medium">MySQL</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2 text-slate-900">SaaS Real-time Kanban Board</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-4">An enterprise task management tool utilizing WebSockets for real-time team collaboration and custom project analytics.</p>
-                    <div class="flex gap-4 text-sm font-medium">
-                        <a href="#" class="text-cyan-600 hover:underline flex items-center gap-1">Live Demo <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
-                        <a href="#" class="text-slate-500 hover:text-slate-800 flex items-center gap-1">Source Code <i class="fa-brands fa-github text-xs"></i></a>
-                    </div>
+                
+                <h3 class="text-xl font-bold mb-2 text-slate-900">Mini-Library</h3>
+                <p class="text-slate-500 text-sm leading-relaxed mb-4">A streamlined library management system built to handle book records and organization effectively.</p>
+                
+                <div class="flex gap-4 text-sm font-medium">
+                    <a href="https://github.com/amodhkushan/Mini-Library" target="_blank" rel="noopener noreferrer" class="text-teal-600 hover:underline flex items-center gap-1">
+                        View on GitHub <i class="fa-brands fa-github text-xs"></i>
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <section id="contact" class="py-24 px-6 max-w-4xl mx-auto border-t border-slate-100/60 bg-white/40 backdrop-blur-md rounded-3xl mb-12">
         <div class="text-center max-w-2xl mx-auto mb-12">
